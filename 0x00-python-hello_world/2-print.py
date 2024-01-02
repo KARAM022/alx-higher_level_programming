@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-str = "\"Programming is like building a multilingual puzzle\n"
+str = "\"Programming is like buildin"
 print(f"{str:s}")
