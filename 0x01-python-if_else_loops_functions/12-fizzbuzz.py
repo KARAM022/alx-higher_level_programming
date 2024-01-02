@@ -10,4 +10,10 @@ def fizzbuzz():
                 i = "FizzBuzz"
             print("{:02d}, ".format(i), end="")
         else:
+            if((i % 3 == 0) and (i % 5 != 0)):
+                i = "Fizz"
+            if((i % 3 != 0) and (i % 5 == 0)):
+                i = "Buzz"
+            if((i % 3 == 0) and (i % 5 == 0)):
+                i = "FizzBuzz"
             print("{:02d}".format(i), end="\n")
