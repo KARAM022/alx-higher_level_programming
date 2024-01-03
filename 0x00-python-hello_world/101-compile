@@ -2,7 +2,5 @@
 filename=$(basename -- "$PYFILE")
 extension="${filename##*.}"
 filename="${filename%.*}"
-
 output_filename="$filename.c"
-
 python3 -m py_compile "$PYFILE"
