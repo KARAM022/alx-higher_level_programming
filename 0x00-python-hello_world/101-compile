@@ -7,7 +7,6 @@
 
 OUTPUT_FILE="${PYFILE}c"
 
-python3 -m py_compile "$PYFILE" 
-# && mv "__pycache__/$PYFILE.cpython-*.pyc" "$OUTPUT_FILE" && rm -rf "__pycache__"
+python3 -m py_compile "$PYFILE" && mv "__pycache__/$PYFILE.cpython-*.pyc" "$OUTPUT_FILE" && rm -rf "__pycache__"
 
 
