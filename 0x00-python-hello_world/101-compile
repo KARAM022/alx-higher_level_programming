@@ -1,6 +1,13 @@
 #!/bin/bash
-filename=$(basename -- "$PYFILE")
-extension="${filename##*.}"
-filename="${filename%.*}"
-output_filename="$filename.c"
-python3 -m py_compile "$PYFILE"
+
+# if [ -z "$PYFILE" ]; then
+#     echo "Error: PYFILE environment variable not set."
+#     exit 1
+# fi
+
+OUTPUT_FILE="${PYFILE}c"
+
+python3 -m py_compile "$PYFILE" 
+# && mv "__pycache__/$PYFILE.cpython-*.pyc" "$OUTPUT_FILE" && rm -rf "__pycache__"
+
+
