@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''empty function'''
+'''empty class'''
 
 
 class Square:
-    '''Square : empty function'''
+    '''Square : empty class'''
     pass
