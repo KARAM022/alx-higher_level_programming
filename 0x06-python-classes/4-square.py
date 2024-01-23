@@ -5,9 +5,13 @@
 class Square:
     '''Square class'''
 
-    def area(self):
-        '''current square area.'''
-        return self.__size ** 2
+    def __init__(self, size=0):
+        '''constructor.
+
+        args:
+            size: size
+        '''
+        self.__size = size
 
     @property
     def size(self):
@@ -16,8 +20,8 @@ class Square:
 
     @property.setter
     def size(self, value):
-        '''setter.
-
+        '''setter
+        
         args:
             value: value
         '''
@@ -26,3 +30,7 @@ class Square:
         if value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
+
+    def area(self):
+        '''current square area.'''
+        return self.__size ** 2
