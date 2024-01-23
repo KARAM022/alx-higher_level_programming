@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-'''cmnt 1'''
+'''empty function'''
+
 
 class Square:
-    '''cmnt 2'''
+    '''Square : empty function'''
     pass
