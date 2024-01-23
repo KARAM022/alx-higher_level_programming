@@ -11,4 +11,4 @@ class Square:
         args:
             size: size
         '''
-        self.size = size
+        self.__size = size
