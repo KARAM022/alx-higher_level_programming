@@ -4,10 +4,10 @@
 
 class Square:
     '''Square class'''
-    
+
     def __init__(self, size):
         '''constructor.
-        
+
         args:
             size: size
         '''
