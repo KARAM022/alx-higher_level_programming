@@ -21,7 +21,7 @@ class Square:
     @property.setter
     def size(self, value):
         '''setter
-        
+
         args:
             value: value
         '''
