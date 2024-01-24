@@ -6,10 +6,11 @@
 class Square:
     """cmnt"""
 
-    def __init__(self, size):
+    def __init__(self, size=0, position=(0, 0)):
         """cmnt
         """
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -29,7 +30,7 @@ class Square:
         """cmnt"""
         return (self.__position)
 
-    @property.setter
+    @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
@@ -39,13 +40,17 @@ class Square:
         self.__position = value
 
     def area(self):
-        """cmnt"""
+        """cmnt."""
         return (self.__size * self.__size)
 
     def my_print(self):
         """cmnt"""
-        for i in range(0, self.__size):
-            [print("#", end="") for j in range(self.__size)]
-            print("")
         if self.__size == 0:
+            print("")
+            return
+
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
             print("")
