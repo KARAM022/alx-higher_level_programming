@@ -29,7 +29,7 @@ class Square:
         """cmnt"""
         return (self.__position)
 
-    @position.setter
+    @property.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
