@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Fetches https://intranet.hbtn.io/status"""
 
-import urllib
 import urllib.request
 
 url = "https://alx-intranet.hbtn.io/status"
